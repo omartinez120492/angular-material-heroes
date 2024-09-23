@@ -9,9 +9,9 @@ import { Hero } from '../../interfaces/hero.interface';
 export class CardComponent implements OnInit {
 
   @Input()
-  public hero!:Hero;
+  public hero!: Hero;
 
   ngOnInit(): void {
-  if (!this.hero) throw Error('Hero no existe')
+    if (!this.hero) throw Error('Hero no existe')
   }
 }

@@ -9,7 +9,10 @@
     <mat-label>Contraseña</mat-label>
     <input type="password" matInput placeholder="password">
   </mat-form-field>
-  <button mat-fab extended color="primary" >
+  <button
+    mat-flat-button color="primary" style="border-radius: 20px;"
+    (click)="onLogin()"
+  >
     <mat-icon>login</mat-icon>
     Ingresar
   </button>
